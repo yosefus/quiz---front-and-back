@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.main {
+  width: 100%;
+  text-align: center;
+  min-height: 900px;
+  vertical-align: middle;
+  justify-content: center;
+  background-color: #262626;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px 0 0 0;
+}
+.to-do-box {
+  width: 500px;
+  padding: 60px 0;
+  margin: 0px auto;
+  min-height: 600px;
+  background-color: #a7a7a7;
+
+  border-radius: 20px;
+}
+h3,
+h1 {
+  font-size: 26px;
+  letter-spacing: -0.2px;
+  word-spacing: 0.4px;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: capitalize;
+  margin: 20px 0;
+}
+h1 {
+  font-size: 35px;
+}
+.to-do-box input {
+  border: none;
+  height: 40px;
+  font-size: 20px;
+  padding: 0 20px;
+  cursor: pointer;
+}
+#doAlready,
+#toDo {
+  text-align: left !important;
+}
+#toDo span {
+  font-size: 20px;
+}
+#doAlready .name {
+  text-decoration: line-through;
+  font-size: 20px;
+}
+.to-do-box input,
+button {
+  font-family: Verdana, Geneva, sans-serif;
+  color: #262626;
+  outline: none;
+  cursor: pointer;
+}
+button,
+#submit {
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-family: Poppins;
+  background-color: #262626;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+button:hover,
+#submit:hover {
+  background-color: #fff;
+  color: #000;
+}
+label {
+  margin: 5px auto;
+  display: flex;
+  justify-content: space-between;
+}
+label {
+  width: 60%;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #262626;
+}
+.name {
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+i {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.btn-x:hover {
+  color: #fff;
+}
+.btn-x {
+  color: #be0000;
+  width: 30px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #262626;
+}
+.btn-v {
+  color: #fff;
+  width: 30px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #262626;
+}
+.btn-v:hover {
+  color: #3af515;
+}
+
+.btn-v-checked {
+  color: #3af515;
+  width: 30px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #262626;
+}
+.btn-v-checked:hover {
+  color: #fff;
+}

@@ -1,0 +1,256 @@
+.wrapperflex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: 'Rubik', sans-serif;
+  padding: 182px 0;
+  max-width: 100%;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(../../media/background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.full {
+  width: 100%;
+  padding-top: 50px;
+}
+.formTestBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+input,
+button {
+  cursor: pointer;
+}
+
+.formtest {
+  direction: rtl;
+  max-width: 700px;
+  width: 100vw;
+  padding: 40px;
+}
+
+.wrapperflex input {
+  background: rgba(248, 248, 248, 0.692);
+  text-align: center;
+  border-radius: 10px;
+  line-height: 2.2em;
+  font-size: 16px;
+  padding: 0 10px;
+  overflow: hidden;
+  margin: 10px 0;
+  width: 100%;
+  outline: none;
+  border: none;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 5px 9px 22px -4px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 9px 22px -4px rgba(39, 24, 24, 0.1);
+}
+.formtest label {
+  text-align: center;
+  font-size: 20px;
+}
+.formtest .submit {
+  align-self: center;
+  cursor: pointer;
+  border: none;
+  margin: 20px auto;
+  padding: 2px 0;
+  background-color: #262626;
+  color: #fff;
+}
+
+.publish {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.publish input {
+  box-shadow: none;
+  width: auto;
+  margin-right: 20px;
+}
+.publish label {
+  text-align: center;
+  direction: rtl;
+  margin-right: 200px;
+  font-size: 20px;
+  font-family: 'Rubik', sans-serif;
+}
+.headform {
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.bigtest {
+  width: 100%;
+  max-width: 900px;
+}
+
+/* question */
+.formquestion {
+  width: 500px;
+  max-width: 100vw;
+  margin-top: 30px;
+  padding: 20px;
+  direction: rtl;
+  margin: 30px;
+}
+@media screen and (max-width: 600px) {
+  .formquestion {
+    margin: 15px;
+  }
+}
+.formquestion h3 {
+  padding: 20px;
+}
+
+.formquestion input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 2px 10px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #b1b1b12a;
+  line-height: 2.2em;
+}
+.answersbtn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.answersbtn .answer {
+  width: 100%;
+}
+.answersbtn button {
+  padding: 10px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+.correct {
+  display: flex;
+  align-content: center;
+}
+.correct input {
+  width: 20px;
+  padding: 0 10px;
+  align-self: center;
+}
+.formquestion .submit,
+.addtesterbox .submit {
+  border: none;
+  background-color: transparent;
+  color: #262626;
+  border: 2px solid #262626;
+  border-radius: 0;
+  width: 200px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+.formquestion .submit:hover,
+.addtesterbox .submit:hover {
+  background-color: #262626;
+  color: #fff;
+}
+.addtesterbox {
+  margin-top: 40px;
+  align-self: flex-start;
+  width: 400px;
+  max-width: 100%;
+  padding: 20px;
+  direction: rtl;
+  text-align: center;
+}
+.addtesterbox input {
+  width: 100%;
+  line-height: 2.2em;
+  padding: 3 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+.flexEnd {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding-left: 40px;
+}
+.publishBox {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  padding: 20px;
+  outline: none;
+  border: none;
+  font-size: 19px;
+  font-style: italic;
+  position: fixed;
+  bottom: 100px;
+  left: 100px;
+}
+.scoreBox {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  padding: 20px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  font-style: italic;
+  position: fixed;
+  bottom: 200px;
+  left: 100px;
+  cursor: unset;
+}
+.testersList p {
+  text-decoration: line-through;
+}
+@media screen and (max-width: 600px) {
+  .publishBox {
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    left: 60px;
+  }
+  .scoreBox {
+    width: 60px;
+    height: 60px;
+    bottom: 120px;
+    left: 60px;
+  }
+  .flexEnd {
+    padding: 0 30px;
+  }
+  .formtest {
+    max-width: 100vw;
+    margin: 0;
+  }
+  .formquestion {
+    width: 100%;
+  }
+  .addtesterbox {
+    width: 100%;
+  }
+}

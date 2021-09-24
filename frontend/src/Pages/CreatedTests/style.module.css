@@ -1,0 +1,136 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(../../media/background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding-top: 182px;
+  padding-bottom: 82px;
+}
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  backdrop-filter: blur(20px);
+  -webkit-box-shadow: 5px 9px 22px -4px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 9px 22px -4px rgba(0, 0, 0, 0.2);
+}
+
+table tr {
+  background-color: #f8f8f842;
+  border: 1px solid #ddd;
+  padding: 0.35em;
+}
+
+table th,
+table td {
+  padding: 0.625em;
+  text-align: center;
+}
+
+table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+}
+
+.wrapper table {
+  text-align: center;
+}
+.wrapper table td {
+  padding: 10px 20px;
+  overflow: hidden;
+  font-family: 'Rubik', sans-serif;
+
+  max-width: 250px;
+}
+.wrapper table th {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  padding: 20px 20px;
+  background-color: #26262696;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 400;
+}
+.wrapper table td a {
+  text-decoration: none;
+  color: #5bc0de;
+}
+
+.wrapper table tr {
+  transition: 0.2s all ease-in-out;
+}
+.wrapper table tr:hover {
+  background-color: #26262617;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+    width: 100%;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+
+  .wrapper table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+    max-width: 100%;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+  .links .trash {
+    padding: 0 20px;
+  }
+}
+.createNew {
+  cursor: pointer;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  bottom: 40px;
+  left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.links i {
+  cursor: pointer;
+}
